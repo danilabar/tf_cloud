@@ -36,6 +36,7 @@ resource "yandex_compute_instance" "vm1" {
 
 resource "yandex_vpc_network" "network-1" {
   name = "network1"
+  folder_id = var.yc_folder_id
 }
 
 resource "yandex_vpc_subnet" "subnet-1" {
